@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-flnw
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0013-tenant/ci10t-776-0013-app/devfile-sample-flnw@sha256:3f1d0550e4fd4a40e23aa845703e888e21d05ac47de8db2ba2dbf7ee3429e9d0
+        name: my-nodejs
+        resources: {}
+status: {}
